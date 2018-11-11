@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Old Market Moms - Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="normalize.min.css">
+
+  
+      <style>
+      /* ================
+// Sun
+// ============= */
+.sun {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 20;
+  height: 20vmin;
+  width: 20vmin;
+  -webkit-animation: sunshine 4s infinite;
+          animation: sunshine 4s infinite;
+}
+.sun:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  content: '';
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, #fc0, #fff 100%);
+  box-shadow: 0 0 1em 0 #fff;
+}
+
+@-webkit-keyframes sunshine {
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes sunshine {
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+.ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300%;
+  width: 125%;
+  background: linear-gradient(to bottom, rgba(255, 204, 0, 0.75), rgba(255, 252, 197, 0.25) 35%, rgba(255, 252, 197, 0) 100%);
+  border-radius: 0 0 10em 10em;
+  -webkit-clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%);
+          clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+.ray:nth-child(1) {
+  -webkit-animation: strengthen-1 4s infinite;
+          animation: strengthen-1 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(36deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(36deg) scale(1, 1);
+}
+.ray:nth-child(2) {
+  -webkit-animation: strengthen-2 4s infinite;
+          animation: strengthen-2 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(72deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(72deg) scale(1, 1);
+}
+.ray:nth-child(3) {
+  -webkit-animation: strengthen-3 4s infinite;
+          animation: strengthen-3 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(108deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(108deg) scale(1, 1);
+}
+.ray:nth-child(4) {
+  -webkit-animation: strengthen-4 4s infinite;
+          animation: strengthen-4 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(144deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(144deg) scale(1, 1);
+}
+.ray:nth-child(5) {
+  -webkit-animation: strengthen-5 4s infinite;
+          animation: strengthen-5 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(180deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(180deg) scale(1, 1);
+}
+.ray:nth-child(6) {
+  -webkit-animation: strengthen-6 4s infinite;
+          animation: strengthen-6 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(216deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(216deg) scale(1, 1);
+}
+.ray:nth-child(7) {
+  -webkit-animation: strengthen-7 4s infinite;
+          animation: strengthen-7 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(252deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(252deg) scale(1, 1);
+}
+.ray:nth-child(8) {
+  -webkit-animation: strengthen-8 4s infinite;
+          animation: strengthen-8 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(288deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(288deg) scale(1, 1);
+}
+.ray:nth-child(9) {
+  -webkit-animation: strengthen-9 4s infinite;
+          animation: strengthen-9 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(324deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(324deg) scale(1, 1);
+}
+.ray:nth-child(10) {
+  -webkit-animation: strengthen-10 4s infinite;
+          animation: strengthen-10 4s infinite;
+  -webkit-transform: translate(-50%, 0) rotate(360deg) scale(1, 1);
+          transform: translate(-50%, 0) rotate(360deg) scale(1, 1);
+}
+
+@-webkit-keyframes strengthen-1 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(36deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(36deg) scale(1.35, 1.75);
+  }
+}
+
+@keyframes strengthen-1 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(36deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(36deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-2 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(72deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(72deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-2 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(72deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(72deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-3 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(108deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(108deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-3 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(108deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(108deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-4 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(144deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(144deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-4 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(144deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(144deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-5 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(180deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(180deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-5 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(180deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(180deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-6 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(216deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(216deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-6 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(216deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(216deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-7 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(252deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(252deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-7 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(252deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(252deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-8 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(288deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(288deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-8 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(288deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(288deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-9 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(324deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(324deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-9 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(324deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(324deg) scale(1.35, 1.75);
+  }
+}
+@-webkit-keyframes strengthen-10 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(360deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(360deg) scale(1.35, 1.75);
+  }
+}
+@keyframes strengthen-10 {
+  50% {
+    -webkit-transform: translate(-50%, 0) rotate(360deg) scale(1.35, 1.75);
+            transform: translate(-50%, 0) rotate(360deg) scale(1.35, 1.75);
+  }
+}
+/* ================
+// Clouds
+// ============= */
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+}
+
+.cloud {
+  position: absolute;
+}
+.cloud:nth-child(1) {
+  top: 80%;
+  left: 91%;
+  font-size: 22vmin;
+  opacity: 0.3;
+  -webkit-animation: swoosh-right 2s infinite;
+          animation: swoosh-right 2s infinite;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.cloud:nth-child(2) {
+  top: 89%;
+  left: 99%;
+  font-size: 21vmin;
+  opacity: 0.7;
+  -webkit-animation: swoosh-left 2s infinite;
+          animation: swoosh-left 2s infinite;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.cloud:nth-child(3) {
+  top: 53%;
+  left: 60%;
+  font-size: 8vmin;
+  opacity: 0.4;
+  -webkit-animation: swoosh-right 2s infinite;
+          animation: swoosh-right 2s infinite;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.cloud:nth-child(4) {
+  top: 91%;
+  left: 11%;
+  font-size: 12vmin;
+  opacity: 0.8;
+  -webkit-animation: swoosh-left 2s infinite;
+          animation: swoosh-left 2s infinite;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.cloud:nth-child(5) {
+  top: 35%;
+  left: 67%;
+  font-size: 6vmin;
+  opacity: 0.6;
+  -webkit-animation: swoosh-right 2s infinite;
+          animation: swoosh-right 2s infinite;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.cloud:nth-child(6) {
+  top: 81%;
+  left: 10%;
+  font-size: 6vmin;
+  opacity: 0.5;
+  -webkit-animation: swoosh-left 2s infinite;
+          animation: swoosh-left 2s infinite;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.cloud:nth-child(7) {
+  top: 61%;
+  left: 86%;
+  font-size: 16vmin;
+  opacity: 0.1;
+  -webkit-animation: swoosh-right 2s infinite;
+          animation: swoosh-right 2s infinite;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.cloud:nth-child(8) {
+  top: 93%;
+  left: 10%;
+  font-size: 5vmin;
+  opacity: 0.6;
+  -webkit-animation: swoosh-left 2s infinite;
+          animation: swoosh-left 2s infinite;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.cloud:nth-child(9) {
+  top: 4%;
+  left: 83%;
+  font-size: 13vmin;
+  opacity: 0.7;
+  -webkit-animation: swoosh-right 2s infinite;
+          animation: swoosh-right 2s infinite;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.cloud:nth-child(10) {
+  top: 60%;
+  left: 36%;
+  font-size: 21vmin;
+  opacity: 0.3;
+  -webkit-animation: swoosh-left 2s infinite;
+          animation: swoosh-left 2s infinite;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@-webkit-keyframes swoosh-left {
+  50% {
+    -webkit-transform: translate(-2vmin, 0) scaleX(-1);
+            transform: translate(-2vmin, 0) scaleX(-1);
+  }
+}
+
+@keyframes swoosh-left {
+  50% {
+    -webkit-transform: translate(-2vmin, 0) scaleX(-1);
+            transform: translate(-2vmin, 0) scaleX(-1);
+  }
+}
+@-webkit-keyframes swoosh-right {
+  50% {
+    -webkit-transform: translate(2vmin, 0) scaleX(1);
+            transform: translate(2vmin, 0) scaleX(1);
+  }
+}
+@keyframes swoosh-right {
+  50% {
+    -webkit-transform: translate(2vmin, 0) scaleX(1);
+            transform: translate(2vmin, 0) scaleX(1);
+  }
+}
+/* ================
+// Flowerbed
+// ============= */
+.flowerbed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14vmin;
+}
+
+.flower {
+  position: relative;
+  -webkit-animation: sway 2s infinite;
+          animation: sway 2s infinite;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: rotate(0) scale(1.15, 0.85);
+          transform: rotate(0) scale(1.15, 0.85);
+}
+.flower:nth-of-type(odd) {
+  top: 2.5vmin;
+}
+
+@-webkit-keyframes sway {
+  25% {
+    -webkit-transform: rotate(-8deg) scale(1, 1.25);
+            transform: rotate(-8deg) scale(1, 1.25);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1.15, 0.85);
+            transform: rotate(0) scale(1.15, 0.85);
+  }
+  75% {
+    -webkit-transform: rotate(8deg) scale(1, 1.25);
+            transform: rotate(8deg) scale(1, 1.25);
+  }
+}
+
+@keyframes sway {
+  25% {
+    -webkit-transform: rotate(-8deg) scale(1, 1.25);
+            transform: rotate(-8deg) scale(1, 1.25);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1.15, 0.85);
+            transform: rotate(0) scale(1.15, 0.85);
+  }
+  75% {
+    -webkit-transform: rotate(8deg) scale(1, 1.25);
+            transform: rotate(8deg) scale(1, 1.25);
+  }
+}
+/* ================
+// Title
+// ============= */
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 1em;
+  font-size: 8vmin;
+  color: #fff;
+}
+
+.title-letter {
+  display: inline-block;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.title-letter:nth-child(1) {
+  -webkit-animation: jump 1.25s 0s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+          animation: jump 1.25s 0s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+}
+.title-letter:nth-child(2) {
+  -webkit-animation: jump 1.25s 0.075s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+          animation: jump 1.25s 0.075s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+}
+.title-letter:nth-child(3) {
+  -webkit-animation: jump 1.25s 0.15s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+          animation: jump 1.25s 0.15s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+}
+.title-letter:nth-child(4) {
+  -webkit-animation: jump 1.25s 0.225s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+          animation: jump 1.25s 0.225s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+}
+.title-letter:nth-child(5) {
+  -webkit-animation: jump 1.25s 0.3s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+          animation: jump 1.25s 0.3s infinite cubic-bezier(0.33, -0.22, 0.81, 1.18);
+}
+
+@-webkit-keyframes jump {
+  50% {
+    -webkit-transform: translate(0, -0.25em) scale(1.15);
+            transform: translate(0, -0.25em) scale(1.15);
+  }
+}
+
+@keyframes jump {
+  50% {
+    -webkit-transform: translate(0, -0.25em) scale(1.15);
+            transform: translate(0, -0.25em) scale(1.15);
+  }
+}
+/* ================
+// Structure
+// ============= */
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+html {
+  background: linear-gradient(to top, #a5cfee, #3f70ac 100%);
+}
+
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  
+<h1 class="title"><span class="title-letter">Old</span><span class="title-letter">Market</span><span class="title-letter">Moms</span><span class="title-letter">Coming</span><span class="title-letter">Soon</span>
+</h1>
+<div class="sun">
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+  <div class="ray"></div>
+</div>
+<div class="clouds"><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span><span class="cloud">☁️</span>
+</div>
+<div class="flowerbed"><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span>
+</div>
+  
+  
+  
+  
+</body>
+
+</html>
+ 
